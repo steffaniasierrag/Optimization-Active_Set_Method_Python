@@ -1,1 +1,0 @@
-# Optimization-Active_Set_Method_Python
