@@ -1,18 +1,21 @@
 # Quadratic Convex Problem Solver
-This folder contains Python files to generate, solve, and test instances of quadratic convex problems in the form 
+This folder contains Python files for generating, solving, and testing instances of quadratic convex problems using the active-set method.
+
+Consider the quadratic problem
 
     minimize    1/2 x^T Q x + x^T q
     subject to  sum_{i in I^k}x_i = 1, for k in K
                 x >= 0
 
-where K is a set of disjoint simplices, and I^k form a partition of the set {1,...,n} by using the active-set method. 
+where K is a set of disjoint simplices, and I^k forms a partition of the set {1,...,n}.
 
-The structure of the code is modular, enabling clear separation of problem generation, algorithm implementation, and usage.
+The code structure is modular, enabling clear separation of problem generation, algorithm implementation, and usage.
+
 ---
 ## Folder Structure
 
 1. **`ASQPImplementation.ipynb`**
-    - Python notebook containing the whole code with the experiments implementation included.
+    - Python notebook containing the whole code with the implementation of the experiments included.
 
 1. **`MatricesGenerator.py`** 
     - Generates the instances of a quadratic convex problem.  
